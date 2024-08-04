@@ -1,0 +1,26 @@
+﻿@model List<MyPortfolio.DAL.Entities.Experience>
+
+<div class="col-12 col-md-6">
+
+        <div class="col-block experience">
+            <h3 class="col-title">Deneyimler</h3>
+             @foreach (var item in Model)
+            {
+            <div class="resume-item">
+       
+              
+           
+                <span class="item-arrow"></span>
+                <h5 class="item-title">@item.ExperienceTitle</h5>
+
+                <span class="item-details">@item.ExperienceDate</span>
+                <p class="item-description"> @item.ExperienceDescription</p>
+          
+                
+            </div>
+        }
+        </div>
+    
+    
+</div>
+

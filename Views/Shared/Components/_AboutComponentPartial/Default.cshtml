@@ -1,0 +1,76 @@
+﻿
+
+<div class="lightbox-wrapper" id="about" data-simplebar>
+    <div class="container">
+        <div class="lightbox-close">
+            <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="lightbox-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading page-heading">
+                             
+                                <h2 class="section-title">Hakkımda</h2>
+                                <div class="animated-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+         
+                    <div class="info-section single-section">
+                        <div class="row align-items-center">
+                           
+                            <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="~/Kitzu/img/info-img.jpeg" alt="About Picture"></div>
+                  
+                            <div class="col-12 col-lg-7 info-content">
+                                <div class="content-block">
+                                    <h2 class="content-subtitle">@ViewBag.aboutTitle</h2>
+                                    <h6 class="content-title">@ViewBag.aboutDescription</h6>
+                                    <div class="content-description">
+                                        <p>@ViewBag.aboutDetails</p>
+                                    </div>
+                                    <address class="content-info">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 single-info">
+                                                <span>Ad:</span>
+                                                <p>Ahmet Faruk Torun</p>
+                                            </div>
+                                            <div class="col-12 col-md-6 single-info">
+                                                <span>Email:</span>
+                                                <p><a href="mailto:ahmetfrktorun@gmail.com">ahmetfrktorun@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 single-info">
+                                                <span>Yaş:</span>
+                                                <p>26</p>
+                                            </div>
+                                            <div class="col-12 col-md-6 single-info">
+                                                <span>Yer:</span>
+                                                <p>Bursa, TR</p>
+                                            </div>
+                                        </div>
+                                    </address>
+                                    <div class="d-block d-sm-flex align-items-center">
+                                        <a class="btn content-download button-main button-scheme" href="#0" role="button">CV İndir</a>
+                                        <ul class="list-unstyled list-inline content-follow">
+                                            <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-linkedin"></i></a></li>
+                                            <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-github"></i></a></li>
+                                            <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @await Component.InvokeAsync("_TestemonialComponentPartial")
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

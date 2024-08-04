@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+@await Component.InvokeAsync("_HeadComponentPartial")
+
+<body class="theme-dark">
+
+  <div class="preloader">
+    <div class="preloader-block">
+      <div class="preloader-icon"><span class="loading-dot loading-dot-1"></span><span class="loading-dot loading-dot-2"></span><span class="loading-dot loading-dot-3"></span></div>
+    </div>
+  </div>
+  <div id="overlay-effect"></div>
+    @await Component.InvokeAsync("_NavbarComponentPartial")
+  
+   @await Component.InvokeAsync("_FeatureComponentPartial")
+    
+ @await Component.InvokeAsync("_AboutComponentPartial")
+  
+    
+  @await Component.InvokeAsync("_ResumeComponentPartial")
+  
+  @await Component.InvokeAsync("_PortfolioComponentPartial")
+
+  @await Component.InvokeAsync("_ContactComponentPartial")
+ 
+
+
+ 
+    @await Component.InvokeAsync("_FooterComponentPartial")
+</body>
+
+
+</html>

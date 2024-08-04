@@ -1,0 +1,33 @@
+﻿
+<div class="lightbox-wrapper" id="resume" data-simplebar>
+    <div class="container">
+        <div class="lightbox-close">
+            <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="lightbox-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading page-heading">
+                                
+                                <h2 class="section-title">Özgeçmiş</h2>
+                                <div class="animated-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="resume-section single-section">
+                        <div class="row">
+                    @await Component.InvokeAsync("_EducationComponentPartial")
+                    @await Component.InvokeAsync("_ExperienceComponentPartial")
+                 
+                        </div>
+                    </div>
+                
+                    @await Component.InvokeAsync("_SkillComponentPartial")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

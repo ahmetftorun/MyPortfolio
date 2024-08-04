@@ -1,0 +1,19 @@
+﻿@model List<MyPortfolio.DAL.Entities.Education>
+
+        <div class="col-12 col-md-6">
+            <div class="col-block education">
+                <h3 class="col-title">Eğitim</h3>
+                @foreach (var item in Model)
+                  {
+                <div class="resume-item">
+                    <span class="item-arrow"></span>
+                    <h5 class="item-title">@item.EducationTitle</h5>
+                    <span class="item-details">@item.EducationDate</span>
+                    <p class="item-description">@item.EducationDescription</p>
+                </div>
+                }
+               
+            </div>
+        </div>
+ 
+       

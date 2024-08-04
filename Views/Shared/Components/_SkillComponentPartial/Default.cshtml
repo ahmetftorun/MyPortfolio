@@ -1,0 +1,42 @@
+﻿@model List<MyPortfolio.DAL.Entities.Skill>
+<div class="skills-section single-section">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading">
+
+                <h2 class="section-title">Öğrenilen Diller & Teknolojiler</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            @foreach (var item in Model.Take(3))@*Model.Take(3): Model koleksiyonunun ilk 3 öğesini alır ve bunları sol sütunda görüntüler.*@
+            {
+                <div class="single-skill" data-percentage="@item.SkillsValue">
+                    <div class="skill-info">
+                        <span class="skill-name">@item.Title</span>
+                        <span class="skill-percentage"></span>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: @item.SkillsValue%;"></div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="col-12 col-md-6">
+            @foreach (var item in Model.Skip(3).Take(3))@*Model.Skip(3).Take(3): Model koleksiyonunun ilk 3 öğesini atlar ve sonraki 3 öğeyi alır ve bunları sağ sütunda görüntüler.*@
+            {
+                <div class="single-skill" data-percentage="@item.SkillsValue">
+                    <div class="skill-info">
+                        <span class="skill-name">@item.Title</span>
+                        <span class="skill-percentage"></span>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: @item.SkillsValue%;"></div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>

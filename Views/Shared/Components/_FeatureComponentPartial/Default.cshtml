@@ -1,0 +1,29 @@
+﻿@model List<MyPortfolio.DAL.Entities.Feature>
+
+<section class="home-area element-cover-bg" id="home" style="background-image:url(https://i.hizliresim.com/lrggzfw.jpg)">
+    
+    @foreach (var item in Model)
+    {
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-lg-8 home-content text-center">
+                    <h1 class="home-name">@item.FeatureName </h1>
+                    <h4 class="cd-headline clip home-headline">Ben Bir<span class="cd-words-wrapper single-headline"><b class="is-visible">@item.FeatureDescription</b></span></h4>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="fixed-wrapper">
+     
+        <div class="fixed-block block-right">
+            <ul class="list-unstyled social-icons">
+                <li><a href="#0"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#0"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#0"><i class="icon ion-logo-linkedin"></i></a></li>
+                <li><a href="#0"><i class="icon ion-logo-github"></i></a></li>
+                <li><a href="#0"><i class="icon ion-logo-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
